@@ -60,10 +60,9 @@ const PostsDetail = () => {
                         <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
                             <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>#{data?.tags?.[0]} #{data?.tags?.[1]} #{data?.tags?.[2]}</p>
                         </div>
-                        <div className='py-[8px] md:py-[12px]'>
-                            <div className='text-[11px] md:text-[14px] text-[#8b919a] flex flex-col gap-[2px]'>
-                                <p className='text-white mb-[12px] px-[12px]'>Comments</p>
-                                <form className='border-t h-[80px] md:h-[112px] py-[8px] md:py-[12px] border-t-[#3d444d] flex items-start' action="">
+                        <div className=''>
+                            <div className='text-[11px] md:text-[14px]'>
+                                <form className='h-[80px] md:h-[112px] flex items-start' action="">
                                     <textarea rows={6} className='w-[90%] h-full resize-none text-white py-[8px] md:py-[12px] px-[12px] outline-none' type="text" placeholder='Add a comment' />
                                     <button className='submit cursor-pointer text-[11px] md:text-[14px] text-[#0095f6] py-[8px] md:py-[12px]'>Post</button>
                                 </form>
