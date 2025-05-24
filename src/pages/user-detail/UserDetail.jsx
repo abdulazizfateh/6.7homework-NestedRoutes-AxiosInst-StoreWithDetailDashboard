@@ -29,9 +29,9 @@ const UserDetail = () => {
                 <div className='users_detail_wrapper py-[30px]'>
                     <div key={data?.id} className='users_detail_card w-[40%] max-[1024px]:w-[60%] max-[768px]:w-85% max-[550px]:w-[90%] max-[450px]:w-full mx-auto rounded-[8px] overflow-hidden border border-[#3d444d]'>
                         <div className='h-[42px] px-[12px] flex items-center justify-between gap-[4px] border-b border-b-[#3d444d]'>
-                            <PiUserLight className='text-[#8b919a] text-[22px] leading-[22px] hover:text-[#0095f6] duration-300' />
+                            <PiUserLight className='text-[#8b919a] text-[18px] md:text-[22px] leading-[22px] hover:text-[#0095f6] duration-300' />
                             {
-                                data?.age > 30 && (<RiVerifiedBadgeFill className='text-[18px] text-[#0095f6]' />)
+                                data?.age > 30 && (<RiVerifiedBadgeFill className='text-[18px] md:text-[22px] text-[#0095f6]' />)
                             }
                         </div>
                         <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
