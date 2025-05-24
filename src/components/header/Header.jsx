@@ -40,6 +40,9 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink onClick={handleHideMenu} className='header-link border-b border-transparent text-center text-white py-[4px]' to='/dashboard'>Dashboard</NavLink>
+            </li>
+            <li>
               <NavLink onClick={handleHideMenu} className='header-link border-b border-transparent text-center text-white py-[4px]' to='/recipes'>Recipes</NavLink>
             </li>
             <li>
@@ -64,6 +67,9 @@ const Header = () => {
           </Link>
           <div className='flex items-center gap-[40px]'>
             <ul className='hidden md:absolute md:top-[50%] md:right-[50%] md:translate-x-[50%] md:-translate-y-[50%] lg:static lg:translate-x-[0] lg:translate-y-[0%] md:flex items-center text-[15px] gap-[18px]'>
+              <li>
+                <NavLink className='header-link border-b border-transparent text-white py-[4px]' to='/dashboard'>Dashboard</NavLink>
+              </li>
               <li>
                 <NavLink className='header-link border-b border-transparent text-white py-[4px]' to='/recipes'>Recipes</NavLink>
               </li>

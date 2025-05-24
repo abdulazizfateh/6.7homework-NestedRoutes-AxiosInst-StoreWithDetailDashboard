@@ -14,8 +14,7 @@ import ProductDetail from './pages/product-detail/ProductDetail'
 import RecipeDetail from './pages/recipe-detail/RecipeDetail'
 import PostsDetail from './pages/posts-detail/PostsDetail'
 import UserDetail from './pages/user-detail/UserDetail'
-
-
+import Dashboard from './pages/Dashboard/Dashboard'
 
 function App() {
   return (
@@ -33,6 +32,7 @@ function App() {
           <Route path='/recipe/:id' element={<RecipeDetail />} />
           <Route path='/post/:id' element={<PostsDetail />} />
           <Route path='/user/:id' element={<UserDetail />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Route>
         <Route path='/signin' element={<SignIn />} />
       </Routes>
