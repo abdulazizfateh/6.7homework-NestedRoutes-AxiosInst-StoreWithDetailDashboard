@@ -23,7 +23,7 @@ const PostCards = ({ postsData, count, setCount, loading, lastPost }) => {
                 {
                     loading && <LoadingPosts />
                 }
-                <div className='posts_wrapper py-[30px] grid grid-cols-1 min-[320px]:grid-cols-2 md:grid-cols-3 gap-x-[5px] gap-y-[8px] sm:gap-y-[12px] lg:gap-x-[10px] lg:gap-y-[16px] min-[700px]:gap-[7px] min-[940px]:grid-cols-3 lg:grid-cols-4'>
+                <div className='posts_wrapper py-[30px] grid grid-cols-1 min-[320px]:grid-cols-2 sm:grid-cols-3 gap-x-[5px] gap-y-[8px] sm:gap-y-[12px] lg:gap-x-[10px] lg:gap-y-[16px] min-[700px]:gap-[7px] min-[940px]:grid-cols-3 lg:grid-cols-4'>
                     {
                         postsData?.posts?.map((post) => (
                             <div key={post.id} className='posts_card overflow-hidden rounded-[8px] border border-[#3d444d] flex flex-col'>

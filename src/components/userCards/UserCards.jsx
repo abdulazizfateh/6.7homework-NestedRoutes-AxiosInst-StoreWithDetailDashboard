@@ -24,7 +24,7 @@ const UserCards = ({ userData, count, setCount, loading, lastUser }) => {
                 {
                     loading && <LoadingUsers />
                 }
-                <div className='users_wrapper py-[30px] grid grid-cols-1 min-[320px]:grid-cols-2 md:grid-cols-3 gap-x-[5px] gap-y-[8px] sm:gap-y-[12px] lg:gap-x-[10px] lg:gap-y-[16px] min-[700px]:gap-[7px] min-[480px]:grid-cols-2 min-[940px]:grid-cols-3 lg:grid-cols-4'>
+                <div className='users_wrapper py-[30px] grid grid-cols-1 min-[320px]:grid-cols-2 sm:grid-cols-3 gap-x-[5px] gap-y-[8px] sm:gap-y-[12px] lg:gap-x-[10px] lg:gap-y-[16px] min-[700px]:gap-[7px] min-[480px]:grid-cols-2 min-[940px]:grid-cols-3 lg:grid-cols-4'>
                     {
                         userData?.users?.map((user) => (
                             <div key={user.id} className='users_card rounded-[8px] overflow-hidden border border-[#3d444d]'>
