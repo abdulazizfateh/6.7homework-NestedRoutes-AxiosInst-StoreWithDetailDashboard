@@ -21,7 +21,7 @@ const Posts = () => {
           return allPosts;
         })
       }).catch((error) => {
-        console.log(error);
+        alert(error);
       }).finally(() => {
         setLoading(false);
       })

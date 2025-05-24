@@ -7,7 +7,7 @@ const NotFound = () => {
         <section className='section_notfound text-white'>
             <div className='container mx-auto'>
                 <div className='notfound_wrapper w-full'>
-                    <Link to={-1} className='text-white flex items-center gap-[2px] h-[55px] md:h-[70px]'>
+                    <Link to={"/"} className='text-white flex items-center gap-[2px] h-[55px] md:h-[70px]'>
                         <span className='size-[36px] rounded-[8px] border border-transparent bg-transparent duration-100 hover:border-[#3d444d] active:bg-[#0d1116] flex items-center justify-center pr-[2px]'>
                             <IoChevronBackSharp className='text-[20px] md:size-[22px]' />
                         </span>

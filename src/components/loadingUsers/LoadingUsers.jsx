@@ -13,22 +13,13 @@ const LoadingUsers = () => {
                             <PiUserLight className='text-[#8b919a] text-[22px] leading-[22px]' />
                         </div>
                         <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Full name:</p>
+                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>First Name:</p>
                         </div>
                         <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Username:<span className='text-[#0095f6] cursor-pointer'> @</span></p>
-                        </div>
-                        <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Role:</p>
-                        </div>
-                        <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Email:</p>
-                        </div>
-                        <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Phone Number:</p>
+                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>Last Name:</p>
                         </div>
                         <div className='h-[30px] md:h-[42px] flex items-center'>
-                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a]'>University:</p>
+                            <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>Username:</p>
                         </div>
                     </div>
                 ))

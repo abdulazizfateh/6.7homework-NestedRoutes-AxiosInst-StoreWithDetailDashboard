@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import LoadingPosts from "../loadingPosts/LoadingPosts";
 import { cardsPerLoad } from "../../pages/home/Home";
+import { NavLink } from "react-router-dom";
 
-const PostCards = ({postsData, count, setCount, loading, lastPost}) => {
+const PostCards = ({ postsData, count, setCount, loading, lastPost }) => {
     const handleSeeMore = () => {
         setCount((count + cardsPerLoad));
     }
@@ -25,21 +26,17 @@ const PostCards = ({postsData, count, setCount, loading, lastPost}) => {
                 <div className='posts_wrapper py-[30px] grid grid-cols-1 min-[320px]:grid-cols-2 md:grid-cols-3 gap-x-[5px] gap-y-[8px] sm:gap-y-[12px] lg:gap-x-[10px] lg:gap-y-[16px] min-[700px]:gap-[7px] min-[940px]:grid-cols-3 lg:grid-cols-4'>
                     {
                         postsData?.posts?.map((post) => (
-                            <div key={post.id} className='posts_card overflow-hidden rounded-[8px] border border-[#3d444d] pb-[8px]'>
+                            <div key={post.id} className='posts_card overflow-hidden rounded-[8px] border border-[#3d444d] flex flex-col'>
                                 <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
                                     <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>#{post.tags[0]} #{post.tags[1]} #{post.tags[2]}</p>
                                 </div>
-                                <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                                    <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>Views: <span className='text-white'>{post.views}</span></p>
+                                <div className='py-[8px] md:py-[12px]'>
+                                    <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-2'>Content: <span className='text-white'>{post.body}</span></p>
                                 </div>
-                                <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                                    <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>Likes: <span className='text-white'>{post.reactions.likes}</span></p>
-                                </div>
-                                <div className='h-[30px] md:h-[42px] flex items-center border-b border-b-[#3d444d]'>
-                                    <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-1'>Dislikes: <span className='text-white'>{post.reactions.dislikes}</span></p>
-                                </div>
-                                <div className='h-[102px] md:h-[180px] py-[8px] md:py-[12px]'>
-                                    <p className='px-[12px] text-[11px] md:text-[14px] text-[#8b919a] line-clamp-8'>Text: <span className='text-white'>{post.body}</span></p>
+                                <div className="flex-1 flex items-end justify-end">
+                                    <div className='py-[8px] md:py-[12px] w-full flex items-center justify-end h-[34px] md:h-[42px] border-t border-t-[#3d444d]'>
+                                        <NavLink to={`/post/${post.id}`} className='block px-[12px] text-[11px] md:text-[14px] cursor-pointer hover:underline text-[#0095f6]'>See the full detail</NavLink>
+                                    </div>
                                 </div>
                             </div>
                         ))

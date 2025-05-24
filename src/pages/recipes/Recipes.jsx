@@ -21,7 +21,8 @@ const Recipes = () => {
           return allRecipes;
         })
       }).catch((error) => {
-        console.log(error);
+        alert(error);
+        setLoading(true);
       }).finally(() => {
         setLoading(false);
       })

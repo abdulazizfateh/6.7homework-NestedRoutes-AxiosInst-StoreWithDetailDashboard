@@ -9,7 +9,6 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [lastProduct, setLastProduct] = useState(false);
 
-
   useEffect(() => {
     setLoading(true);
     api.get(`/products?limit=${cardsPerLoad}&skip=${count}`)
@@ -22,7 +21,7 @@ const Home = () => {
           return allProducts;
         })
       }).catch((error) => {
-        console.log(error);
+        alert(error);
       }).finally(() => {
         setLoading(false);
       })
