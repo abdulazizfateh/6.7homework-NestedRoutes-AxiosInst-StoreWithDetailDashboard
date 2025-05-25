@@ -14,7 +14,7 @@ import ProductDetail from './pages/product-detail/ProductDetail'
 import RecipeDetail from './pages/recipe-detail/RecipeDetail'
 import PostsDetail from './pages/posts-detail/PostsDetail'
 import UserDetail from './pages/user-detail/UserDetail'
-import Dashboard from './pages/Dashboard/Dashboard'
+import Dashboard from './pages/dashboard/Dashboard'
 
 function App() {
   return (
